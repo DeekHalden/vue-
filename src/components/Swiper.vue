@@ -1,7 +1,7 @@
 <!-- You can custom the "mySwiper" name used to find the swiper instance in current component -->
 <template>
-  <transition name="fade">
-  <div>
+  
+  <div class="container">
    <swiper :options="swiperOptionh" class="main__swiper">
         <swiper-slide class="h-item">
           <p>
@@ -11,9 +11,9 @@
         <swiper-slide class="h-item">
           <swiper :options="swiperOptionv">
             <swiper-slide class="v-item"> 
-              <p>
-              Vertical Slide 1
-              </p>
+              <a href="http://webcase.studio" target="_blank">
+                Vertical Slide 1
+              </a>
             </swiper-slide>
             <swiper-slide class="v-item"> 
               <p>
@@ -53,8 +53,6 @@
         <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
   </div>
-    
-  </transition> 
 </template>
 
 <script>
@@ -83,14 +81,13 @@
     }
   }
 </script>
-<style type="text/css">
+<style type="text/css" scoped>
+.swiper-container {
+  position: static;
+  width: calc(100% - 54px)
+}
 .swiper-container-v {
     background: #eee;
-  }
-  .main__swiper {
-    min-width: 300px;
-    max-width: 700px;
-    width: 300px;
 
   }
   .h-item {
@@ -106,7 +103,7 @@
   .swiper-button-prev {
     left: 0;
   }
-  p {
+  p,a {
     vertical-align: middle;
     display: inline-block;
     padding: 90px 0

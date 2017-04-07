@@ -1,21 +1,24 @@
-<template>
-  <div id="app" class="container">
-    <navi class="container"></navi>
-    <img src="./assets/logo.png">
-    <transition :name="transitionName">
-      <router-view class="child-view"></router-view>
-    </transition>
-  </div>
+<template lang="pug">
+  include ./assets/bemto/bemto
+  #app.container
+    navi.container
+    +b.H1.heading Router Link Transition Example 
+      +e.SPAN.sub included
+    img(src="./assets/logo.png")
+    transition(:name="transitionName" appear)
+      router-view.child-view
+
 </template>
 
 <script>
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import Navi from '@/components/Nav'
+import { TWEEN } from 'tween.js'
 
 export default {
   name: 'app',
-  components: { Navi, VueAwesomeSwiper },
+  components: { Navi, VueAwesomeSwiper, TWEEN },
   data () {
     return {
       transitionName: 'slide-right'
@@ -23,8 +26,8 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      const toDepth = to.path.split('/')[1].length
-      const fromDepth = from.path.split('/')[1].length
+      const toDepth = to.meta.index
+      const fromDepth = from.meta.index
       this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
       console.log(toDepth, fromDepth, toDepth < fromDepth)
       console.log(this.transitionName)
@@ -49,6 +52,13 @@ export default {
 .container {
   width: 1180px;
   margin: 0 auto;
+}
+
+.heading {
+  margin-top: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 @media(max-width:1200px) {

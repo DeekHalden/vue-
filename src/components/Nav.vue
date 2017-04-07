@@ -1,10 +1,10 @@
-<template>
-  <ul class="hello">
-    <router-link :index="itemIndex" to="/"> home + slot </router-link> 
-    <router-link to="/world"> World </router-link> 
-    <router-link to="/swiper"> Swiper </router-link> 
-    <router-link to="/scopedslot"> ScropedSlot </router-link> 
-  </ul>
+<template lang="pug">
+  ul.hello
+    router-link(to="/home") home + slot 
+    router-link(to="/world") World 
+    router-link(to="/swiper") Swiper 
+    router-link(to="/transitions") Transitions 
+    router-link(to="/velocity") Velocity 
 </template>
 
 <script>
@@ -27,18 +27,27 @@ h1, h2 {
 
 ul {
   margin: 0 auto;
+  width: auto;
   list-style-type: none;
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
   flex-wrap: wrap;
   border-bottom: 5px solid #313233
 }
 
 a {
+  display: block;
   color: #42b983;
+  float: left;
   margin: 0 20px 10px;
 }
+
+a.router-link-active {
+  color: red;
+}
+
 a:first-of-type {
   margin-left: 0;
   

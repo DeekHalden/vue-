@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import World from '@/components/World'
 import Swiper from '@/components/Swiper'
-import ScopedSlot from '@/components/ScopedSlot'
+import Transitions from '@/components/Transitions'
+import Velocity from '@/components/ScopedSlot'
 
 Vue.use(Router)
 
@@ -12,28 +13,45 @@ export default new Router({
   base: __dirname,
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'Hello',
       component: Hello,
-      index: '1'
+      meta: {
+        index: 1
+      }
     },
     {
       path: '/world',
       name: 'World',
       component: World,
-      index: '2'
+      meta: {
+        index: 2
+      }
     },
     {
       path: '/swiper',
       name: 'Swiper',
       component: Swiper,
-      index: '3'
+      meta: {
+        index: 3
+      }
     },
     {
-      path: '/scopedslot',
-      name: 'ScopedSlot',
-      component: ScopedSlot,
-      index: '4'
+      path: '/transitions',
+      name: 'transitions',
+      component: Transitions,
+      meta: {
+        index: 4
+      }
+    },
+    {
+      path: '/velocity',
+      name: 'velocity',
+      component: Velocity,
+      meta: {
+        index: 5
+      }
     }
   ]
 })
+
