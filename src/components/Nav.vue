@@ -5,6 +5,7 @@
     router-link(to="/swiper") Swiper 
     router-link(to="/transitions") Transitions 
     router-link(to="/velocity") Velocity 
+    router-link(to="/Notemaster") Notemaster 
 </template>
 
 <script>

@@ -5,6 +5,7 @@ import World from '@/components/World'
 import Swiper from '@/components/Swiper'
 import Transitions from '@/components/Transitions'
 import Velocity from '@/components/ScopedSlot'
+import Notemaster from '@/components/Notemaster'
 
 Vue.use(Router)
 
@@ -50,6 +51,14 @@ export default new Router({
       component: Velocity,
       meta: {
         index: 5
+      }
+    },
+    {
+      path: '/notemaster',
+      name: 'notemaster',
+      component: Notemaster,
+      meta: {
+        index: 6
       }
     }
   ]

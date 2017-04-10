@@ -5,12 +5,49 @@
     transition(name="fade" mode="out-in")
       p(v-if="show" key="show") yo, peace, c`mon
       p(v-else key="hide") Sry, nothing left to say
+    div.block(v-for="box in boxes")
+      button(@click="mytoggle(box.index)") block {{box.index}}
+      transition(name="fade" mode="out-in" tag="div")
+        div.box-wrapper(:class="{ 'box-wrapper--active': box.isActive}")
+          p i am box number {{ box.index }}
+          p i am box number {{ box.index }}
+          div {{ box.index }}
+    hr
+    pre {{ boxes }}
+    hr
+    pre {{ boxes }}
+    hr
+    pre {{ boxes }}
+
 </template>
 <script>
   export default {
     data () {
       return {
-        show: true
+        show: true,
+        boxes: [
+          {
+            isActive: false,
+            index: 0
+          },
+          {
+            isActive: false,
+            index: 1
+          },
+          {
+            isActive: false,
+            index: 2
+          }
+        ]
+      }
+    },
+    methods: {
+      mytoggle: function (n) {
+        console.log(n)
+        for (var i = 0; i < 3; i++) { // close all boxes
+          this.boxes[i].show = false
+        }
+        this.boxes[n].show = !this.boxes[n].show // open the corresponding box
       }
     }
   }
@@ -29,7 +66,7 @@
   p
     margin-top 30px
   .fade-enter-active, .fade-leave-active 
-    transition opacity .2s ease
+    transition all .2s ease
   // .fade-enter-active 
   //   transition-delay .2s
   // .fade-enter 
