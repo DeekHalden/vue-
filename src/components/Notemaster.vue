@@ -11,7 +11,7 @@
         p.note__title {{ note.title }}
         p.note__date {{ note.timestamp}}
         p.note__desc {{ note.desc }}
-        input(type="number" @keydown.enter="changeRank(index)" v-model="newRank")
+        input(type="number" @keydown.enter="changeRank(index)" v-bind:note="note" v-model="note.rank")
         p.note__rank {{ note.rank }}
 
     
@@ -33,7 +33,8 @@
         },
         notes: [
         ],
-        newRank: 0
+        newRank: 0,
+        newRankOfItem: 0
       }
     },
     mounted () {
@@ -47,18 +48,20 @@
           title: this.item.title,
           desc: this.item.desc,
           timestamp: this.item.timestamp,
-          rank: this.item.rank
+          rank: this.item.rank,
+          newRank: 0
         })
         localStorage.setItem('notes', JSON.stringify(this.notes))
         this.item.title = ''
         this.item.desc = ''
+        this.item.rank = 0
       },
       removeItem (index) {
         this.notes.splice(index, 1)
         localStorage.setItem('notes', JSON.stringify(this.notes))
       },
       changeRank (index) {
-        this.notes[index].rank = this.newRank
+        this.notes[index].rank = this.notes[index].rank
         localStorage.setItem('notes', JSON.stringify(this.notes))
       }
     }
