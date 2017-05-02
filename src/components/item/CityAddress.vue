@@ -10,12 +10,9 @@
       +e.icon
         .icon-map
         p на карте
-    <gmap-map :center="center" :zoom="7" style="width: 500px; height: 300px">
-      <gmap-marker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" :draggable="true" @click="center=m.position">
-      
-      </gmap-marker>
-    </gmap-map>
-
+      .map-container
+        gmap-map(:center="address.position", :zoom="7" style="width: 500px; height: 300px")
+          gmap-marker(:key="index", :position="address.position", :clickable="true", :draggable="true" @click="center=m.position")
     
 </template>
   
@@ -24,14 +21,6 @@
 export default {
   data () {
     return {
-      center: {lat: 10.0, lng: 10.0},
-      markers: [
-        {
-          position: {lat: 10.0, lng: 10.0}
-        }, {
-          position: {lat: 11.0, lng: 11.0}
-        }
-      ]
     }
   },
   props: ['location']

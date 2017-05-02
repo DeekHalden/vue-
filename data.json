@@ -3,45 +3,38 @@
             "name": "Краматорск",
             "addresses": [{
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Deserunt enim nam aliquid eius iusto earum voluptate, dolores numquam officiis similique harum rerum debitis quaerat",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Perspiciatis molestiae deleniti pariatur aperi",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Earum ullam optio nihil, perspiciatis",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Assumenda velit accusamus qui facilis est non tempore autem. Perferendis autem voluptatibus, quasi quae modi",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Incidunt aliquam natus, doloremque exercitationem modi voluptates deserunt laborum amet aliquam, possimus eos cupiditate ullam accusantium necessitatibus ipsa",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Consectetur aut eos expedita placeat, molestiae vero assumenda o",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Natus accusamus placeat commodi facilis odit odio porro praesentium, quaerat error aliquid maiores totam natus debitis quasi veritatis hic optio aspernatur? Hic molestias illo dolores nam eaque v",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }],
             "currencies": [{
@@ -128,33 +121,28 @@
             "name": "Новоазовск",
             "addresses": [{
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Harum iusto accusantium saepe corrupti dolorem quibusdam molestiae, voluptatum quas nihil repudiandae dicta sequi, unde ipsam cupiditate? Atque beatae fugia",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 20.0},
                 "address_on_map": "Similique tempore aspernatur accusantium doloremque fugiat ut, accusantium optio molestias accusamus id, asperiores similique facilis dolo",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 20.0, "lng": 10.0},
                 "address_on_map": "Illum perspiciatis atque, quo ducimus enim quaerat totam doloremque iure numquam a? Cum cupiditate beatae corrupti, adipisci explicabo sapiente ab error praesentium rerum. Sa",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 10.0, "lng": 10.0},
                 "address_on_map": "Excepturi voluptatem reiciendis sequi laboriosam tenetur maiores dolorum quasi, nostrum sint nisi illum",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }, {
                 "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
-                "latitude": null,
+                "position": {"lat": 10.0, "lng": 10.0},
                 "address_on_map": "Alias a eveniet optio numquam animi sapiente quo nam fugiat voluptatibus, quia numquam itaque est officiis excepturi dignissimos quas sequi modi inc",
-                "longitude": null,
                 "schedule": "График работы: ежедневно с 9 до 17"
             }],
             "currencies": [{
