@@ -1,22 +1,30 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import resource from 'vue-resource'
+import Items from '@/components/item/Items'
 import World from '@/components/World'
-import Swiper from '@/components/Swiper'
-import Transitions from '@/components/Transitions'
-import Velocity from '@/components/ScopedSlot'
-import Notemaster from '@/components/Notemaster'
+import VueCookie from 'vue-cookie'
+import AsyncComputed from 'vue-async-computed'
+import * as VueGoogleMaps from 'vue2-google-maps'
 
 Vue.use(Router)
+Vue.use(resource)
+Vue.use(VueCookie)
+Vue.use(AsyncComputed)
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: ''
+  }
+})
 
 export default new Router({
   mode: 'history',
   base: __dirname,
   routes: [
     {
-      path: '/home',
-      name: 'Hello',
-      component: Hello,
+      path: '/',
+      name: 'Items',
+      component: Items,
       meta: {
         index: 1
       }
@@ -27,38 +35,6 @@ export default new Router({
       component: World,
       meta: {
         index: 2
-      }
-    },
-    {
-      path: '/swiper',
-      name: 'Swiper',
-      component: Swiper,
-      meta: {
-        index: 3
-      }
-    },
-    {
-      path: '/transitions',
-      name: 'transitions',
-      component: Transitions,
-      meta: {
-        index: 4
-      }
-    },
-    {
-      path: '/velocity',
-      name: 'velocity',
-      component: Velocity,
-      meta: {
-        index: 5
-      }
-    },
-    {
-      path: '/notemaster',
-      name: 'notemaster',
-      component: Notemaster,
-      meta: {
-        index: 6
       }
     }
   ]

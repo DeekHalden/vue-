@@ -10,13 +10,19 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "tween.js": "^16.6.0",
     "velocity": "^0.7.2",
     "velocity-animate": "^1.5.0",
     "vue": "^2.2.2",
+    "vue-async-computed": "^3.0.1",
     "vue-awesome-swiper": "^2.4.0",
     "vue-carousel-3d": "^0.1.8",
+    "vue-cookie": "^1.1.4",
     "vue-localstorage": "^0.1.3",
-    "vue-router": "^2.2.0"
+    "vue-resource": "^1.3.1",
+    "vue-router": "^2.2.0",
+    "vue2-google-maps": "^0.7.5",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
@@ -30,7 +36,7 @@
     "chalk": "^1.1.3",
     "connect-history-api-fallback": "^1.3.0",
     "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.26.1",
+    "css-loader": "^0.26.4",
     "eslint": "^3.14.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-friendly-formatter": "^2.0.7",

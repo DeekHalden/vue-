@@ -1,10 +1,7 @@
 <template lang="pug">
   include ./assets/bemto/bemto
-  #app.container
-    navi.container
-    +b.H1.heading Router Link Transition Example 
-      +e.SPAN.sub included
-    img(src="./assets/logo.png")
+  #app
+    header-nav
     transition(:name="transitionName" appear)
       router-view.child-view
 
@@ -12,13 +9,11 @@
 
 <script>
 
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-import Navi from '@/components/Nav'
-import { TWEEN } from 'tween.js'
+import HeaderNav from '@/components/Nav'
 
 export default {
   name: 'app',
-  components: { Navi, VueAwesomeSwiper, TWEEN },
+  components: { HeaderNav },
   data () {
     return {
       transitionName: 'slide-right'
@@ -36,87 +31,160 @@ export default {
 }
 </script>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="stylus">
 
-.container {
-  width: 1180px;
-  margin: 0 auto;
-}
+@font-face 
+    font-family Roboto-reg
+    src url('./assets/fonts/Roboto-Regular.ttf')
+@font-face 
+    font-family Roboto-light
+    src url('./assets/fonts/Roboto-Light.ttf')
+@font-face 
+    font-family Roboto-bold
+    src url('./assets/fonts/Roboto-Bold.ttf')
+@font-face 
+    font-family Roboto-black
+    src url('./assets/fonts/Roboto-Black.ttf')
+@font-face 
+    font-family Roboto-thin
+    src url('./assets/fonts/Roboto-thin.ttf')
+    
+@import './assets/icomoon.css'
+@import "./_vars.styl"
 
-.heading {
-  margin-top: 20px;
-  text-decoration: underline;
-  text-transform: uppercase;
-  font-size: 20px;
-}
+* 
+  margin 0
+  padding 0
 
-@media(max-width:1200px) {
-    .container {
-        width: 940px;
-      
-    }
-  
-}
+#app 
+  font-family Roboto-reg
+  color #2c3e50
 
-@media(max-width:960px)  {
-    .container {
-      width: 700px;
-      
-    }
 
-}
+html
+    font-size 14px
 
-@media(max-width:720px)  {
-    .container {
-      width: 460px;
-      
-    }
+*
+    margin 0
+    padding 0
+    box-sizing border-box
+    -webkit-backface-visibility hidden
+    
 
-}
+body
+    font-size 1em
+    font-family $reg
+    background-color #fff
+    
+.wrapper 
+    width 100% 
+    position relative
+    
+.container-fluid
+    width 100%
+    
+.container
+    width 1180px
+    margin 0 auto
+    padding 0 15px
+    
+.clearfix:before,.clearfix:after
+    content ""
+    display table
+    width 0
+    height 0
+    visibility hidden
+    
+.clearfix:after
+    clear both
+    
+.content 
+  margin-top 118px
+    
+-webkit-input-placeholder
+    font-family $font
+    font-size 14px
+-moz-placeholder
+   font-family $font
+   font-size 14px
+   
+-moz-placeholder
+   font-family $font
+   font-size 14px
 
-@media(max-width:480px)  {
-    .container {
-      width: 300px;
-    }
-}
+-ms-input-placeholder
+   font-family $font
+   font-size 14px
 
-.fade-enter-active {
-  transition-delay: .25s;
-}
-.fade-enter-active, .fade-leave-active {
-  transition-property: opacity;
-  transition-duration: 1s;
-}
+-webkit-inner-spin-butto
+    display none
+    -webkit-appearance none
+-ms-expand
+    display none
+    
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"], select
+     -webkit-appearance none
+     border-radius 0
+.select2
+    spanfocu
+        outline none
 
-.fade-enter, .fade-leave-active {
-  opacity: 0;
-}
 
-.child-view {
-  left: 0;
-  right: 0;
-  position: absolute;
-  transition: all .5s cubic-bezier(.55,0,.1,1);
-}
-.slide-left-enter, .slide-right-leave-active {
-  opacity: 0;
-  -webkit-transform: translate(30px, 0);
-  transform: translate(30px, 0);
-}
-.slide-left-leave-active, .slide-right-enter {
-  opacity: 0;
-  -webkit-transform: translate(-30px, 0);
-  transform: translate(-30px, 0);
-}
+a, img, div, input, select
+    &:active, &:focus
+        outline none
+    
+@media(max-width 1199px)
+    .container
+        width 940px
+
+@media(max-width 960px) 
+    .container
+        width 700px
+
+@media(max-width 720px) 
+    .container
+        width 460px
+        
+@media(max-width 480px) 
+    .container
+        width 300px
+        padding 0 5px
+
+    
+
+    
+
+
+.fade-enter-active 
+  transition-delay .25s
+
+.fade-enter-active, .fade-leave-active 
+  transition-property opacity
+  transition-duration 1s
+
+
+.fade-enter, .fade-leave-active 
+  opacity 0
+
+
+.child-view 
+  left 0
+  right 0
+  position absolute
+  transition all .5s cubic-bezier(.55,0,.1,1)
+
+.slide-left-enter, .slide-right-leave-active 
+  opacity 0
+  -webkit-transform translate(30px, 0)
+  transform translate(30px, 0)
+
+.slide-left-leave-active, .slide-right-enter 
+  opacity 0
+  -webkit-transform translate(-30px, 0)
+  transform translate(-30px, 0)
+
 </style>

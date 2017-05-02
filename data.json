@@ -1,0 +1,270 @@
+{
+    "cities": [{
+            "name": "Краматорск",
+            "addresses": [{
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Deserunt enim nam aliquid eius iusto earum voluptate, dolores numquam officiis similique harum rerum debitis quaerat",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Perspiciatis molestiae deleniti pariatur aperi",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Earum ullam optio nihil, perspiciatis",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Assumenda velit accusamus qui facilis est non tempore autem. Perferendis autem voluptatibus, quasi quae modi",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Incidunt aliquam natus, doloremque exercitationem modi voluptates deserunt laborum amet aliquam, possimus eos cupiditate ullam accusantium necessitatibus ipsa",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Consectetur aut eos expedita placeat, molestiae vero assumenda o",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Natus accusamus placeat commodi facilis odit odio porro praesentium, quaerat error aliquid maiores totam natus debitis quasi veritatis hic optio aspernatur? Hic molestias illo dolores nam eaque v",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }],
+            "currencies": [{
+                "currency_name": "USD/UAH",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        -1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 26.19,
+                "sale_rate": 26.55
+            }, {
+                "currency_name": "RUB/UAH",
+                "is_increase": {
+                    "sale": [
+                        -1,
+                        0.45
+                    ],
+                    "purchase": [
+                        1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 0.43,
+                "sale_rate": 0.47
+            }, {
+                "currency_name": "EUR/UAH",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 28.23,
+                "sale_rate": 28.96
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        -1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 90.89,
+                "sale_rate": 89.4
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        -1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 22.93,
+                "sale_rate": 21.16
+            }],
+            "phones": [{
+                "number": "+38 (050)51 75 252"
+            }, {
+                "number": "mail: best_obmen@gmail.com"
+            },{
+                "number": "+38 (050)51 75 252"
+            }, {
+                "number": "skype: best_obmen"
+            }]
+        }, {
+            "name": "Новоазовск",
+            "addresses": [{
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Harum iusto accusantium saepe corrupti dolorem quibusdam molestiae, voluptatum quas nihil repudiandae dicta sequi, unde ipsam cupiditate? Atque beatae fugia",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Similique tempore aspernatur accusantium doloremque fugiat ut, accusantium optio molestias accusamus id, asperiores similique facilis dolo",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Illum perspiciatis atque, quo ducimus enim quaerat totam doloremque iure numquam a? Cum cupiditate beatae corrupti, adipisci explicabo sapiente ab error praesentium rerum. Sa",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Excepturi voluptatem reiciendis sequi laboriosam tenetur maiores dolorum quasi, nostrum sint nisi illum",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }, {
+                "address": "ул. Заводская 12 , ТЦ Варус 1 этаж",
+                "latitude": null,
+                "address_on_map": "Alias a eveniet optio numquam animi sapiente quo nam fugiat voluptatibus, quia numquam itaque est officiis excepturi dignissimos quas sequi modi inc",
+                "longitude": null,
+                "schedule": "График работы: ежедневно с 9 до 17"
+            }],
+            "currencies": [{
+                "currency_name": "USD/UAH",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        -1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 57.58,
+                "sale_rate": 56.48
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        -1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 40.49,
+                "sale_rate": 38.02
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        0,
+                        0
+                    ]
+                },
+                "purchase_rate": 26.51,
+                "sale_rate": 23.84
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        -1,
+                        -0.22
+                    ]
+                },
+                "purchase_rate": 23.41,
+                "sale_rate": 21.25
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 3.98,
+                "sale_rate": 1.13
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        1,
+                        0.45
+                    ],
+                    "purchase": [
+                        -1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 51.55,
+                "sale_rate": 49.5
+            }, {
+                "currency_name": "DGG/QWX",
+                "is_increase": {
+                    "sale": [
+                        -1,
+                        -0.45
+                    ],
+                    "purchase": [
+                        1,
+                        0.22
+                    ]
+                },
+                "purchase_rate": 69.34,
+                "sale_rate": 67.4
+            }],
+            "phones": [{
+                "number": "+38 (050)51 75 252"
+            }, {
+                "number": "mail: best_obmen@gmail.com"
+            },{
+                "number": "+38 (050)51 75 252"
+            }, {
+                "number": "skype: best_obmen"
+            }]
+        }
+    ]
+}
